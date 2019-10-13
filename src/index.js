@@ -9,6 +9,7 @@ module.exports = function getTimeForEducation(
     knowsProgramming = true,
     config = {family: 4}
     ) {
-      return 0;
+      let hoursPerWeekCount = config[focus];
+      return knowsProgramming ? Math.ceil(800 / hoursPerWeekCount) : Math.ceil(1300 / hoursPerWeekCount);
   };
   
